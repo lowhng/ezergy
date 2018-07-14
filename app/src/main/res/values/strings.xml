@@ -9,6 +9,9 @@
     <string name="payment_dialog_msg">Your outstanding bill amounts to: </string>
     <string name="payment_btn_text">PROCEED</string>
     <string name="title_activity_login">Sign in</string>
+    <string name="electricity_graph_text">Electricity Usage</string>
+    <string name="company_name_text">Company: </string>
+    <string name="billing_status_text">Billing Status:</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>

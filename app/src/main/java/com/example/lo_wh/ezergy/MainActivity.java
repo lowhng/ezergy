@@ -1,6 +1,7 @@
 package com.example.lo_wh.ezergy;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +10,10 @@ import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -79,7 +83,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showDetailsDialog(){
-        
+        Intent intent = new Intent(this, Main2Activity.class);
+
+        intent.putExtra(EXTRA_MESSAGE, "message");
+        startActivity(intent);
     }
 }
 
